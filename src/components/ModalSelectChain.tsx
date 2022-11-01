@@ -61,7 +61,7 @@ function ModalSelectChain() {
             render={({ field }) => {
               return (
                 <>
-                  <ChainsTypeContainer onValueChange={field.onChange}>
+                  <ChainsTypeContainer>
                     <ChainTypeButton value="ethereum">
                       <div>
                         <img src={imageChain1} alt="" />
@@ -73,7 +73,7 @@ function ModalSelectChain() {
                     </ChainTypeButton>
                   </ChainsTypeContainer>
 
-                  <ChainsTypeContainer onValueChange={field.onChange}>
+                  <ChainsTypeContainer>
                     <ChainTypeButton value="binance">
                       <div>
                         <img src={imageChain2} alt="" />
@@ -85,7 +85,7 @@ function ModalSelectChain() {
                     </ChainTypeButton>
                   </ChainsTypeContainer>
 
-                  <ChainsTypeContainer onValueChange={field.onChange}>
+                  <ChainsTypeContainer>
                     <ChainTypeButton value="fantom">
                       <div>
                         <img src={imageChain3} alt="" />
@@ -97,7 +97,7 @@ function ModalSelectChain() {
                     </ChainTypeButton>
                   </ChainsTypeContainer>
 
-                  <ChainsTypeContainer onValueChange={field.onChange}>
+                  <ChainsTypeContainer>
                     <ChainTypeButton value="polygon">
                       <div>
                         <img src={imageChain4} alt="" />
@@ -109,7 +109,7 @@ function ModalSelectChain() {
                     </ChainTypeButton>
                   </ChainsTypeContainer>
 
-                  <ChainsTypeContainer onValueChange={field.onChange}>
+                  <ChainsTypeContainer>
                     <ChainTypeButton value="avalanche">
                       <div>
                         <img src={imageChain5} alt="" />
@@ -121,7 +121,7 @@ function ModalSelectChain() {
                     </ChainTypeButton>
                   </ChainsTypeContainer>
 
-                  <ChainsTypeContainer onValueChange={field.onChange}>
+                  <ChainsTypeContainer>
                     <ChainTypeButton value="cardano">
                       <div>
                         <img src={imageChain6} alt="" />
@@ -133,7 +133,7 @@ function ModalSelectChain() {
                     </ChainTypeButton>
                   </ChainsTypeContainer>
 
-                  <ChainsTypeContainer onValueChange={field.onChange}>
+                  <ChainsTypeContainer>
                     <ChainTypeButton value="tron">
                       <div>
                         <img src={imageChain7} alt="" />
@@ -145,7 +145,7 @@ function ModalSelectChain() {
                     </ChainTypeButton>
                   </ChainsTypeContainer>
 
-                  <ChainsTypeContainer onValueChange={field.onChange}>
+                  <ChainsTypeContainer>
                     <ChainTypeButton value="hyperledger">
                       <div>
                         <img src={imageChain8} alt="" />
@@ -157,7 +157,7 @@ function ModalSelectChain() {
                     </ChainTypeButton>
                   </ChainsTypeContainer>
 
-                  <ChainsTypeContainer onValueChange={field.onChange}>
+                  <ChainsTypeContainer>
                     <ChainTypeButton value="corda">
                       <div>
                         <img src={imageChain9} alt="" />

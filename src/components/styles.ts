@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components"
 import * as Dialog from "@radix-ui/react-dialog"
-import * as Radio from "@radix-ui/react-radio-group"
+import * as Toggle from "@radix-ui/react-toggle"
 
 const contentShow = keyframes`
 	0% {
@@ -66,11 +66,10 @@ const DialogOverlay = styled(Dialog.Overlay)`
 `
 export { DialogOverlay }
 
-const ChainsTypeContainer = styled(Radio.Root)`
+const ChainsTypeContainer = styled.div`
   /* display: grid;
   gap: ${(props) => props.theme.space[4]};
   grid-template-columns: 1fr 1fr 1fr; */
-
   width: 100%;
 
   &:focus {
@@ -123,7 +122,7 @@ const ButtonModalChainContainer = styled.div`
 `
 export { ButtonModalChainContainer }
 
-const ChainTypeButton = styled(Radio.Item)`
+const ChainTypeButton = styled(Toggle.Root)`
   align-items: center;
   background: ${(props) => props.theme.color.gray[700]};
   border-radius: ${(props) => props.theme.radii.sm};
@@ -134,12 +133,12 @@ const ChainTypeButton = styled(Radio.Item)`
   padding: ${(props) => props.theme.space[1]} ${(props) => props.theme.space[1]};
   width: 100%;
 
-  &[data-state="checked"] {
+  &[data-state="on"] {
     background: ${(props) => props.theme.color.viveel.violet700};
     border-color: transparent !important;
   }
 
-  &[data-state="unchecked"] {
+  &[data-state="off"] {
     svg {
       visibility: hidden;
     }
