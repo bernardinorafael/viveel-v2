@@ -23,7 +23,7 @@ const tokenFormValidation = z.object({
   token_name: z.string().min(1, "Required field"),
   symbol: z.string().min(1, "Required field"),
   name: z.string().min(1, "Required field"),
-  amount: z.number().min(1, "Required field"),
+  amount: z.number({ invalid_type_error: "Required field" }).min(1, "Required field"),
 })
 
 type NewTokenFormType = z.infer<typeof tokenFormValidation>
