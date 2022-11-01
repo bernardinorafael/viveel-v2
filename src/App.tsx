@@ -1,5 +1,6 @@
 import { BrowserRouter } from "react-router-dom"
 import { ThemeProvider } from "styled-components"
+import TokenProvider from "./context/TokenContext"
 import PagesRoute from "./routes"
 import { GlobalStyles } from "./styles/globals"
 import theme from "./styles/themes/default"
@@ -10,7 +11,9 @@ function App() {
       <GlobalStyles />
 
       <BrowserRouter>
-        <PagesRoute />
+        <TokenProvider>
+          <PagesRoute />
+        </TokenProvider>
       </BrowserRouter>
     </ThemeProvider>
   )

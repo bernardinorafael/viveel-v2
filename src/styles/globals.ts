@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
 	}
 
 	:focus {
-		box-shadow: 0 0 0 3px ${(props) => props.theme.color.cyan[500]};
+		box-shadow: 0 0 0 3px ${(props) => props.theme.color.viveel.violet300};
 		outline: none;
 	}
 

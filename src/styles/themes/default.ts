@@ -9,6 +9,7 @@ const theme = {
       blue700: "#120d24",
       blue900: "#020015",
 
+      violet100: "#7040f220",
       violet300: "#5f5998",
       violet500: "#7040f2",
       violet700: "#31274b",

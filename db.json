@@ -1,0 +1,15 @@
+{
+  "tokens": [
+    {
+      "token_name": "rafa",
+      "symbol": "rafa",
+      "chain": "",
+      "distribution": {
+        "name": "rafa",
+        "amount": 3
+      },
+      "created_at": "2022-11-01T14:43:24.044Z",
+      "id": "d922edec-b2d5-443f-80ce-c7a143593607"
+    }
+  ]
+}
